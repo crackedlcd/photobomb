@@ -30,7 +30,7 @@ class ImagesController < ApplicationController
 
     respond_to do |format|
       if @image.save
-        format.html { redirect_to 'show', notice: 'Image was successfully created.' }
+        format.html { redirect_to image_path(@image), notice: 'Image was successfully created.' }
         format.json { render :show, status: :created, location: @image }
       else
         format.html { render :new }
@@ -71,6 +71,6 @@ class ImagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def image_params
-      params.require(:image).permit(:content)
+      params.require(:image).permit(:content, :tag_list)
     end
 end

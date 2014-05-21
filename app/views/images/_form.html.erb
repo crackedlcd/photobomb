@@ -1,4 +1,10 @@
-<%= form_for @image, :url => { :action => 'create' }, :html => { :multipart => true } do |f| %>
+<%= form_for @image, :html => { :multipart => true } do |f| %>
+
+  <%= f.label :content, "Submit your picture" %><br />
   <%= f.file_field :content %>
+
+  <%= f.label :tag_list, "Tags (seperated by commas)" %><br />
+  <%= f.text_field :tag_list %>
+
   <%= f.submit "Upload" %>
 <% end %>

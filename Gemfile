@@ -28,4 +28,10 @@ gem 'spring',        group: :development
 
 gem 'devise'
 gem 'paperclip'
+gem 'acts-as-taggable-on'
 
+group :test do 
+	gem 'capybara_minitest_spec'
+	gem 'factory_girl'
+	gem 'shoulda-matchers'
+end

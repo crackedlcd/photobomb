@@ -30,8 +30,12 @@ gem 'devise'
 gem 'paperclip'
 gem 'acts-as-taggable-on'
 
+group :development, :test do
+	gem 'rspec-rails'
+	gem 'capybara'
+end
+
 group :test do 
-	gem 'capybara_minitest_spec'
 	gem 'factory_girl'
 	gem 'shoulda-matchers'
 end

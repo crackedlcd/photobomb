@@ -1,21 +1,14 @@
-<h1>Listing images</h1>
 
-<table>
-  <tbody>
-    <% @images.each do |image| %>
-      <tr>
-        <td><%= image_tag image.content.url(:thumb) %></td>
-        <td><%= link_to 'Show', image %></td>
-        <td><%= link_to 'Edit', edit_image_path(image) %></td>
-        <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-      <tr>
-        <td><p>Tags: <%= image.tag_list %></p></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="container">
+  <div class="row">
+    <div id="grid" class="span12">
+      <% @images.each do |image| %>
+        <%= image_tag image.content.url(:thumb), class: 'img-responsive img-thumbnail image' %>
+      <% end %>
+    </div>
+  </div>
+</div>
 
 <br>
 
-<%= link_to 'New Image', new_image_path %>
+<%= link_to 'New Image', new_image_path, class: 'btn btn-large btn-primary' %>

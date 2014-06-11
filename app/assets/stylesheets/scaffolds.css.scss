@@ -1,3 +1,14 @@
+@import "bootstrap";
+
+.box {
+  display: inline-block;
+  width: 100%;
+  margin: 30px;
+  img {
+    float: left;
+  }
+}
+
 body {
   background-color: #fff;
   color: #333;

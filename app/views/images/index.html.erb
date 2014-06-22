@@ -1,12 +1,13 @@
-
-  <div class="row">
-    <div id="grid" class="span12">
-      <% @images.each do |image| %>
+<div class="row">
+  <div id="grid" class="span12">
+    <% @images.each do |image| %>
+      <%= link_to image do %>
         <%= image_tag image.content.url(:thumb), class: 'img-responsive img-thumbnail image' %>
       <% end %>
-    </div>
+    <% end %>
   </div>
+</div>
 
-<br>
+<br />
 
 <%= link_to 'New Image', new_image_path, class: 'btn btn-large btn-primary' %>

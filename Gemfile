@@ -30,6 +30,7 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'paperclip'
 gem 'acts-as-taggable-on'
+gem 'aws-sdk', '~> 1.50.0'
 
 group :development, :test do
 	gem 'rspec-rails'

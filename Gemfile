@@ -31,6 +31,7 @@ gem 'devise'
 gem 'paperclip'
 gem 'acts-as-taggable-on'
 gem 'aws-sdk', '~> 1.50.0'
+gem 'kaminari', '~> 0.16.1'
 
 group :development, :test do
 	gem 'rspec-rails'

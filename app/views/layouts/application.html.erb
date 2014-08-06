@@ -9,12 +9,7 @@
 <body>
 	<div class="containter">
 
-		<% if notice %>
-			<p class="alert alert-success alert-dismissable"><%= notice %></p>
-		<% end %>
-		<% if alert %>
-			<p class="alert alert-danger alert-dismissable"><%= error %></p>
-		<% end %>
+		<%= render "layouts/notice" %>
 
 		<%= yield %>
 

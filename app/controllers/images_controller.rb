@@ -5,9 +5,9 @@ class ImagesController < ApplicationController
   # GET /images.json
   def index
     if params[:tag]
-      @images = Image.tagged_with(params[:tag])
+      @images = Image.tagged_with(params[:tag]).order(:id).page(params[:page])
     else
-      @images = Image.order(:id).page(params[:page]).per(12)
+      @images = Image.order(:id).page(params[:page]).per(3)
     end
   end
 

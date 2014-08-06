@@ -1,12 +1,14 @@
-<div id="tag-cloud">
+<div class = "row"><%= paginate @images %></div>
+
+<div id="tag-cloud" class="row col-md-2">
   <% tag_cloud Image.tag_counts, %w[css1, css2, css3, css4] do |tag, css_class| %>
     <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    <br />
   <% end %>
 </div>
 
-<%= paginate @images %>
 
-<div class="row">
+<div class="row col-md-10">
   <div id="grid" class="span12">
     <% @images.each do |image| %>
       <%= link_to image do %>

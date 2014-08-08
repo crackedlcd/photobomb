@@ -1,9 +1,11 @@
 <%= form_for @image, :html => { :multipart => true, :class => "form-inline" } do |f| %>
 
-  <div class="form-group">
-    <%= f.label :content, "Submit your picture" %><br />
-    <%= f.file_field :content %>
-	</div>
+	<% if current_page?(action: 'new') %>
+	  <div class="form-group">
+	    <%= f.label :content, "Submit your picture" %><br />
+	    <%= f.file_field :content %>
+		</div>
+	<% end %>
 
 	<div class="form-group">
     <%= f.label :tag_list, "Tags (seperated by commas)" %><br />

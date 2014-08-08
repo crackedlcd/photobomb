@@ -7,7 +7,7 @@ class ImagesController < ApplicationController
     if params[:tag]
       @images = Image.tagged_with(params[:tag]).order(:id).page(params[:page])
     else
-      @images = Image.order(:id).page(params[:page]).per(3)
+      @images = Image.order(:id).page(params[:page]).per(12)
     end
   end
 

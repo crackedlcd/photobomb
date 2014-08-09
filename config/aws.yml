@@ -1,3 +1,7 @@
 development:
   access_key_id: <%= ENV["ACCESS_KEY_OD"] %>
   secret_access_key: <%= ENV["SECRET_ACCESS_KEY"] %>
+
+production: 
+  access_key_id: <%= ENV["ACCESS_KEY_OD"] %>
+  secret_access_key: <%= ENV["SECRET_ACCESS_KEY"] %>

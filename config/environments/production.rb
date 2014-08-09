@@ -87,6 +87,8 @@ Rails.application.configure do
     :s3_credentials => {
       :bucket => 'photobombrails'
     }
+    :url => ':s3_alais_url'
+    :s3_host_alais => 'd3h5js5adpfqv0.cloudfront.net'
   }
   config.action_controller.asset_host = "d3h5js5adpfqv0.cloudfront.net"
 end

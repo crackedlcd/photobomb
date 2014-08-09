@@ -47,3 +47,9 @@ group :test do
 	gem 'factory_girl'
 	gem 'shoulda-matchers'
 end
+
+group :production do
+	gem 'rails_12factor', '~> 0.0.2'
+end
+
+ruby "2.1.2"

@@ -1,12 +1,21 @@
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
 
 .box {
   display: inline-block;
   width: 100%;
   margin: 30px;
-  img {
-    float: left;
+  a {
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+#tag-cloud {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+  padding-top: 5%;
 }
 
 .css1 { font-size: 1.0em; }
@@ -17,7 +26,7 @@
 body {
   background-color: #fff;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Arvo', serif;
   font-size: 13px;
   line-height: 18px;
   margin: 2% 5% 0 5%;

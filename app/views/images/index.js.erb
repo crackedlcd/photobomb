@@ -1,0 +1,2 @@
+$('#image').html("<%= escape_javascript(render 'image') %>");
+$('.paginator').html("<%= escape_javascript(paginate(@images, remote: true)) %>");

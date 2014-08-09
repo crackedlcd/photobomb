@@ -4,7 +4,7 @@
 
 
 $(document).on 'ready page:load', ->
-	$(".alert-dismissable").fadeOut(3000)
+	$(".alert").fadeOut(3000)
 
 	if history and history.pushState
 	  $ ->

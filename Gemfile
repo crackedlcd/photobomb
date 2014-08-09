@@ -33,6 +33,11 @@ gem 'acts-as-taggable-on'
 gem 'aws-sdk', '~> 1.50.0'
 gem 'kaminari', '~> 0.16.1'
 
+group :development do
+	gem 'better_errors', '~> 1.1.0'
+	gem 'binding_of_caller', '~> 0.7.2'
+end
+
 group :development, :test do
 	gem 'rspec-rails'
 	gem 'capybara'

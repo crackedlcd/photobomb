@@ -2,6 +2,12 @@
 
 <p><strong>Tags: </strong><%= raw @image.tag_list.map { |t| link_to t, tag_path(t) }.join(", ") %></p>
 
+<% if @image.user.nil? %>
+  <p>User: Anonymous</p>
+<% else %>
+  <p><%= @image.user.email %>
+<% end %>  
+
 <%= link_to 'Edit', edit_image_path(@image) %> |
 <%= link_to 'Back', images_path %> |
 <%= link_to 'Delete', @image, method: :delete, data: { confirm: 'Are you sure?'} %>

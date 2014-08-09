@@ -32,6 +32,7 @@ gem 'paperclip', '~> 4.2.0'
 gem 'acts-as-taggable-on', '~> 3.3.0'
 gem 'aws-sdk', '~> 1.50.0'
 gem 'kaminari', '~> 0.16.1'
+gem 'unicorn', '~> 4.8.3'
 
 group :development do
 	gem 'better_errors', '~> 1.1.0'

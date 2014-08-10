@@ -5,10 +5,6 @@
   display: inline-block;
   width: 100%;
   margin: 30px;
-  a {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 #tag-cloud {
@@ -16,12 +12,27 @@
   margin-right: auto;
   padding-left: 5%;
   padding-top: 5%;
+  text-align: justify;
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+#grid {
+  @media(max-width: 767px) {
+    img {
+      // text-align: center;
+      margin: 15px auto;
+      // margin-left: auto;
+      // margin-right: auto;
+    }
+  }
 }
 
 .css1 { font-size: 1.0em; }
-.css2 { font-size: 1.2em; }
-.css3 { font-size: 1.4em; }
-.css4 { font-size: 1.6em; }
+.css2 { font-size: 1.4em; }
+.css3 { font-size: 1.7em; }
+.css4 { font-size: 2.0em; }
 
 body {
   background-color: #fff;
@@ -29,7 +40,7 @@ body {
   font-family: 'Arvo', serif;
   font-size: 13px;
   line-height: 18px;
-  margin: 2% 5% 0 5%;
+  margin: 5% 5% 0 5%;
 }
 
 p, ol, ul, td {
@@ -96,3 +107,4 @@ div {
 .btn {
   background-color: #C9FFC7;
 }
+

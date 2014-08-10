@@ -1,8 +1,8 @@
 <div class="col-md-10 col-md-push-2">
-	<div id="grid" class="box">
+	<div id="grid" class="box row text-center">
 	  <% @images.each do |image| %>
 		<%= link_to image do %>
-		  <%= image_tag image.content.url(:thumb), class: 'img-responsive img-thumbnail image' %>
+		  <%= image_tag image.content.url(:thumb), class: 'img-responsive img-thumbnail image'%>
 		<% end %>
 	  <% end %>
 	</div>

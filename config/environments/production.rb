@@ -84,9 +84,7 @@ Rails.application.configure do
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_host_name => 's3-us-west-2.amazonaws.com',
-    :s3_credentials => {
-      :bucket => 'photobombrails'
-    },
+    :bucket => 'photobombrails',
     :url => ':s3_alias_url',
     :s3_host_alias => 'd3h5js5adpfqv0.cloudfront.net'
   }

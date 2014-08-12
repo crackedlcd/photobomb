@@ -3,7 +3,7 @@
 <% if @image.user.nil? %>
   <p>User: Anonymous</p>
 <% else %>
-  <p><%= @image.user.email %>
+  <p><%= @image.user.username %>
 <% end %>  
 
 <p><strong>Tags: </strong><%= raw @image.tag_list.map { |t| link_to t, tag_path(t) }.join(", ") %></p>

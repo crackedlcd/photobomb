@@ -4,7 +4,10 @@
 
 
 $(document).on 'ready page:load', ->
-	$(".alert").fadeOut(3000)
+	$(".alert-success").fadeOut(5000)
+	$(".alert-danger").click ->
+		$(this).fadeOut(5000)
+
 
 	if history and history.pushState
 	  $ ->

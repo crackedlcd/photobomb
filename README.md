@@ -13,6 +13,7 @@ You can see this app in action here [http://afternoon-badlands-5229.herokuapp.co
 
 ### Not yet implemented
 + ~~User sign up and sign in~~
++ Admin user
 + User images
 + Following tags
 + Brakeman

@@ -44,6 +44,9 @@
 
 .navbar {
   opacity: .9;
+  a:hover {
+    text-shadow: 0 0 5px rgba(201,255,199, 0.9);
+  }
 }
 
 body {

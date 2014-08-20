@@ -19,4 +19,7 @@ class User < ActiveRecord::Base
     end
   end
 
+  # def admin?
+  #   current_user.try(:admin)
+  # end
 end

@@ -8,7 +8,7 @@
   <div id="image">
     <%= render partial: 'image' %>
   </div>
-  <div id="tag-cloud" class="col col-md-3 col-md-pull-9">
+  <div id="tag-cloud" class="col col-md-2 col-md-pull-9">
     <% tag_cloud Image.tag_counts, %w[css1 css2 css3 css4] do |tag, css_class| %>
       <%= link_to tag.name, tag_path(tag.name), class: css_class %>
       <br />

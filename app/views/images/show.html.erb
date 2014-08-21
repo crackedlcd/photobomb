@@ -6,7 +6,7 @@
   <p><%= @image.user.username %>
 <% end %>  
 
-<p><strong>Tags: </strong><%= raw @image.tag_list.map { |t| link_to t, tag_path(t) }.join(", ") %></p>
+<p><strong>Tags: </strong><%= print_image_tag_links @image %></p>
 
 <%= link_to 'Edit', edit_image_path(@image) %> |
 <%= link_to 'Back', images_path %>

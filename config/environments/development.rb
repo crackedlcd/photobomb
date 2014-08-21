@@ -35,15 +35,24 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
+  # config.paperclip_defaults = {
+  # :storage => :s3,
+  # :s3_host_name => 's3-us-west-2.amazonaws.com',
+  # :s3_host_alais => 'd3h5js5adpfqv0.cloudfront.net'
+  # :url => ":s3_alias_url"
+  # :s3_credentials => {
+  #   :access_key_id => ENV["AWS_ACCESS_KEY_ID"],
+  #   :secret_access_key => ENV["AWS_SECRET_ACCESS_KEY"] 
+  #   },
+  # :bucket => 'photobombrails'
+
   config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_host_name => 's3-us-west-2.amazonaws.com',
-  :s3_host_alais => 'd3h5js5adpfqv0.cloudfront.net'
-  :url => ":s3_alias_url"
-  :s3_credentials => {
-    :access_key_id => ENV["AWS_ACCESS_KEY_ID"],
-    :secret_access_key => ENV["AWS_SECRET_ACCESS_KEY"] 
-    },
-  :bucket => 'photobombrails'
+    :storage => :s3,
+    :s3_host_name => 's3-us-west-2.amazonaws.com',
+    :bucket => 'photobombrails',
+    :s3_host_alias => 'd3h5js5adpfqv0.cloudfront.net',
+    :url => ':s3_alias_url'
+  }
+  config.action_controller.asset_host = "d3h5js5adpfqv0.cloudfront.net"
 }
 end

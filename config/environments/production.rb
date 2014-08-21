@@ -48,6 +48,8 @@ Rails.application.configure do
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
+  config.action_controller.asset_host = "//#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com"
+
   config.assets.prefix = "/production/assets"
 
   # Use a different logger for distributed setups.

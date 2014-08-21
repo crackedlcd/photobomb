@@ -1,9 +1,9 @@
 <p><%= image_tag @image.content.url %></p>
 
 <% if @image.user.nil? %>
-  <p>User: Anonymous</p>
+  <p><strong>User: </strong>Anonymous</p>
 <% else %>
-  <p><%= @image.user.username %>
+  <p><strong>User: </strong><%= @image.user.username %>
 <% end %>  
 
 <p><strong>Tags: </strong><%= print_image_tag_links @image %></p>

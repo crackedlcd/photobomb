@@ -31,6 +31,7 @@ Rails.application.configure do
 
   # Generate digests for assets URLs.
   config.assets.digest = true
+  config.assets.enabled = true
 
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
@@ -47,6 +48,7 @@ Rails.application.configure do
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
+  config.assets.prefix = "/production/assets"
 
   # Use a different logger for distributed setups.
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
@@ -85,8 +87,8 @@ Rails.application.configure do
     :storage => :s3,
     :s3_host_name => 's3-us-west-2.amazonaws.com',
     :bucket => 'photobombrails',
-    :url => ':s3_alias_url',
-    :s3_host_alias => 'd3h5js5adpfqv0.cloudfront.net'
+    :s3_host_alias => 'd3h5js5adpfqv0.cloudfront.net',
+    :url => ':s3_alias_url'
   }
   config.action_controller.asset_host = "d3h5js5adpfqv0.cloudfront.net"
 end

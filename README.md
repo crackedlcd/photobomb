@@ -10,10 +10,11 @@ You can see this app in action here [http://afternoon-badlands-5229.herokuapp.co
 + Responsive CSS Stylings
 + Deployment to Heroku
 + User sign up and sign in (with usernames)
++ Admin can now delete any image.
 
 ### Not yet implemented
 + ~~User sign up and sign in~~
-+ Admin user
++ ~~Admin user~~
 + User images
 + Following tags
 + Brakeman

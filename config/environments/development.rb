@@ -53,6 +53,5 @@ Rails.application.configure do
     :s3_host_alias => 'd3h5js5adpfqv0.cloudfront.net',
     :url => ':s3_alias_url'
   }
-  config.action_controller.asset_host = "d3h5js5adpfqv0.cloudfront.net"
-}
+  # config.action_controller.asset_host = "d3h5js5adpfqv0.cloudfront.net"
 end

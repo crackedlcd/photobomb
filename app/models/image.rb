@@ -1,4 +1,7 @@
 class Image < ActiveRecord::Base
+
+  scope :recent, -> { order("images.created_at DESC") }
+
 	belongs_to :user
 	has_attached_file :content,
 	 :styles => { :thumb => "300x300>" }, :default_url => "/images/missing.jpg", 

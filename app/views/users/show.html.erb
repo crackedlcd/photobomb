@@ -1,0 +1,13 @@
+<h2><%= @user.username %></h2>
+
+<div id="image">
+  <div class="col-md-12">
+    <div id="grid" class="box row text-center">
+      <% @user.images.each do |image| %>
+      <%= link_to image do %>
+        <%= image_tag image.content.url(:thumb), class: 'img-responsive img-thumbnail image'%>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

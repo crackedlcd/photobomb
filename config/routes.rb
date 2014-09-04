@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  get 'users_controller/show'
+
   resources :images
 
   devise_for :users
+  resources :users, :only => [:show]
 
   get 'tags/:tag', to: 'images#index', as: :tag
 
